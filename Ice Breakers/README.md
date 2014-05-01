@@ -17,11 +17,11 @@ Data Structures Library Repository
 
 #filterNumbers.cpp
 + Provided a set of integers in a text file, the program outputs the correct sets of numbers given different sets of filters
-	+Program implemented using function pointers
-	+in the command line argument, first input should be the text file to read the list of numbers from, the second input should be the letter of the filter to be applied.
-	+A: output only even integers
-	+B: output only perfect squares
-	+C: output only primes
+	+ Program implemented using function pointers
+	+ in the command line argument, first input should be the text file to read the list of numbers from, the second input should be the letter of the filter to be applied.
+	+ A: output only even integers
+	+ B: output only perfect squares
+	+ C: output only primes
 
 #rbbst.h
 + A self-implementation of the insert function of red black tree
