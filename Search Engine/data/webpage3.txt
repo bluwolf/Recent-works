@@ -1,0 +1,2 @@
+, wordN)": the user wants to see all the pages that contain all of the given words. The number of words here can be arbitrary. There will always be at least one whitespace between the AND and the parenthesis. Between the words inside the AND and the commas, there may be arbitrary amounts of whitespace.
+"OR (word1, word2, ..., wordN)": the user wants to see all the pages that contain at least one of the given words. The number of words here can be arbitrary. Same rules for whitespace as for AND queries.
