@@ -1,8 +1,8 @@
 ##Quicksort and Heap class 
 
 **Purpose**
-	+ Rewrites a max heap class and calculate its insertion/removal CPU runtime
-	+ Implement two types of quicksort and test them using Grading.cpp
++ Rewrites a max heap class and calculate its insertion/removal CPU runtime
++ Implement two types of quicksort and test them using Grading.cpp
 		+ Method 1: Quicksort using random pivot
 		+ Method 2: Quicksort using end pivot
 

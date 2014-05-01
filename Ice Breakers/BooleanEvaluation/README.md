@@ -2,7 +2,7 @@
 + Type "make" in main menu to activate makefile for Stack.cpp
 + Implements a "Stack" by inheriting from a self-wrote linked list
 
-+Purpose of Stack.cpp
++ Purpose of Stack.cpp
 	+ Evaluates a parse through a boolean expression and evaluate value and validity
 	+ first command line argument: text file that contains the boolean expression
 	+ second command line argument: text file that contains the key to the expressions in the boolean expressions
