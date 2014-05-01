@@ -4,6 +4,7 @@ Recent-works
 **Developer Information**
 + Xiaohan Chen
 + Computer Engineering and Computer Science
++ Entrepreneurship
 + Class of 2016
 + Viterbi School of Engineering
 + University of Southern California
