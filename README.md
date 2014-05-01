@@ -15,6 +15,6 @@ Recent-works
 	+ Fun! :-)
 
 + Projects:
-	+ Google Search Engine (in progress)
+	+ Search Engine (in progress)
 
 
