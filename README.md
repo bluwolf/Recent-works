@@ -24,6 +24,6 @@ Recent-works
 	+ Fun! :-)
 
 + Projects:
-	+ Search Engine (in progress)
+	+ Textfile Search Engine
 
 
