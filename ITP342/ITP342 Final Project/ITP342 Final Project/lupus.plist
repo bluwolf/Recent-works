@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Eurasian Wolf</string>
+		<key>image</key>
+		<string>150px-Canis_lupus_lupus_qtl1.jpg</string>
+		<key>description</key>
+		<string>Generally a large subspecies measuring 105–160 cm in length and weighing 40–80 kg. The pelt is usually a mix of rusty ocherous and light grey.</string>
+		<key>sanctuary</key>
+		<string>Kimbertal Kennels</string>
+		<key>email</key>
+		<string>kimbertalkls@aol.com</string>
+		<key>location</key>
+		<string>151 Ford Road Kimberton, PA 19442
+151 Ford Road Kimberton, PA. 19442</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Arctic Wolf</string>
+		<key>image</key>
+		<string>150px-Canis_lupus_arctos_qtl1.jpg</string>
+		<key>description</key>
+		<string>A medium-sized wolf that is between 64 and 79 cm tall and 89 to 189 cm long, weighing between 35 and 45 kg on average, though there have been specimens found weighing up to 68 kg.[</string>
+		<key>sanctuary</key>
+		<string>White Wolf Sanctuary</string>
+		<key>email</key>
+		<string>whitewolf@casco.net</string>
+		<key>location</key>
+		<string>PO Box 65 Tidewater, OR 97390
+Tidewater, OR 97390</string>
+	</dict>
+</array>
+</plist>

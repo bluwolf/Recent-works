@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6r7-tb-ALi" userLabel="BackgroundB">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backgroundButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6tC-ff-IBh"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your name here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jf0-RA-VOK">
+                                <rect key="frame" x="178" y="98" width="245" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="245" id="CYW-se-NSW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="exitKeyboardOnReturn:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="I7A-43-ENw"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RW-DP-m9t" userLabel="PirateB">
+                                <rect key="frame" x="448" y="212" width="120" height="120"/>
+                                <state key="normal" backgroundImage="pirate(1).png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pirateButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tzR-ug-W5e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kil-TF-MJg" userLabel="MessageField">
+                                <rect key="frame" x="87" y="373" width="426" height="135"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuP-BH-fKp" userLabel="NinjaB">
+                                <rect key="frame" x="16" y="212" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="aRl-Ll-rt1"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="ninja(1).png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ninjaButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4mn-08-9tm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cW9-NB-Ijy">
+                                <rect key="frame" x="0.0" y="0.0" width="595" height="592"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you a pirate or a ninja?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCf-7J-pbo">
+                                <rect key="frame" x="178" y="20" width="275" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Enq-jB-EQj"/>
+                                    <constraint firstAttribute="width" constant="275" id="GOR-M3-lDa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40533666470000002" green="0.51061963070000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="3RW-DP-m9t" secondAttribute="trailing" constant="16" id="AtH-wf-QJd"/>
+                            <constraint firstItem="Kil-TF-MJg" firstAttribute="centerX" secondItem="6r7-tb-ALi" secondAttribute="centerX" id="DE3-g2-DRG"/>
+                            <constraint firstItem="Jf0-RA-VOK" firstAttribute="top" secondItem="tCf-7J-pbo" secondAttribute="bottom" constant="29" id="EXW-Ro-jUc"/>
+                            <constraint firstItem="6r7-tb-ALi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HY1-Lh-qVA"/>
+                            <constraint firstItem="Kil-TF-MJg" firstAttribute="top" secondItem="fuP-BH-fKp" secondAttribute="bottom" constant="41" id="JLP-Ye-eIb"/>
+                            <constraint firstItem="Jf0-RA-VOK" firstAttribute="centerX" secondItem="Kil-TF-MJg" secondAttribute="centerX" id="KbF-yd-qGt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cW9-NB-Ijy" secondAttribute="trailing" constant="-11" id="Pbk-0Y-fFL"/>
+                            <constraint firstItem="fuP-BH-fKp" firstAttribute="top" secondItem="3RW-DP-m9t" secondAttribute="top" id="Qaw-lb-71v"/>
+                            <constraint firstItem="Kil-TF-MJg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="S9d-Cr-PmJ"/>
+                            <constraint firstItem="6r7-tb-ALi" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="XPY-fe-lzB"/>
+                            <constraint firstItem="cW9-NB-Ijy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fek-Mp-v6p"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kil-TF-MJg" secondAttribute="bottom" constant="92" id="jFN-VJ-o78"/>
+                            <constraint firstItem="6r7-tb-ALi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="let-Fn-OzF"/>
+                            <constraint firstItem="tCf-7J-pbo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nVP-7l-jby"/>
+                            <constraint firstItem="Jf0-RA-VOK" firstAttribute="leading" secondItem="tCf-7J-pbo" secondAttribute="leading" id="nbc-c1-EVG"/>
+                            <constraint firstItem="cW9-NB-Ijy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nlu-VZ-wjk"/>
+                            <constraint firstAttribute="trailing" secondItem="6r7-tb-ALi" secondAttribute="trailing" id="t9J-Iz-RWD"/>
+                            <constraint firstItem="fuP-BH-fKp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="192" id="tet-Pg-xsG"/>
+                            <constraint firstItem="fuP-BH-fKp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ysx-Sp-hwp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cW9-NB-Ijy" secondAttribute="bottom" constant="8" symbolic="YES" id="zgh-GB-qzw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cW9-NB-Ijy"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="Kil-TF-MJg" id="ESK-0F-JFV"/>
+                        <outlet property="nameTextField" destination="Jf0-RA-VOK" id="adK-fm-QNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="534" y="443"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ninja(1).png" width="120" height="120"/>
+        <image name="pirate(1).png" width="120" height="120"/>
+    </resources>
+</document>
