@@ -44,9 +44,17 @@ Recent Work
 	+ Tic Tac Toe Game (simple tic tac toe in swing)
 	+ GUI Component Practice (image insertion)
 
++ iOS App Development
+    + Attractions of Los Angeles
+    + Create Story
+    + Hello World!
+    + Pirates vs. Ninja
+    + Quotes of the Day
+    + WolfQuest
 
 
-+ Projects:
+
+** Projects:**
 	+ Search Engine (C++)
 	+ Worker Factory 
 		+ a full-fledged animated worker factory system
