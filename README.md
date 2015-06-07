@@ -54,7 +54,7 @@ Recent Work
 
 
 
-** Projects:**
+**Projects:**
 	+ Search Engine (C++)
 	+ Worker Factory 
 		+ a full-fledged animated worker factory system
