@@ -12,6 +12,8 @@ Recent Work
 
 **A list of projects and small exercises (Ice Breakers):**
 
+**Directories:**
+
 + Ice Breakers in C++
 	+ Boolean Expression Evaluation
 	+ Quicksort Exercise
