@@ -47,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A676EF11AE82E9F004A05D3 /* Lab6_Los Angeles Attractions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab6_Los Angeles Attractions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A676EF11AE82E9F004A05D3 /* Attractions of Los Angeles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Attractions of Los Angeles.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A676EF51AE82E9F004A05D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A676EF61AE82E9F004A05D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A676EF81AE82E9F004A05D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		6A676EFF1AE82E9F004A05D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A676F011AE82E9F004A05D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6A676F041AE82E9F004A05D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6A676F0A1AE82E9F004A05D3 /* Lab6_Los Angeles AttractionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab6_Los Angeles AttractionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A676F0A1AE82E9F004A05D3 /* Attractions of Los AngelesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Attractions of Los AngelesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A676F0F1AE82E9F004A05D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A676F101AE82E9F004A05D3 /* Lab6_Los_Angeles_AttractionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lab6_Los_Angeles_AttractionsTests.m; sourceTree = "<group>"; };
 		6A676F1A1AEAF8D5004A05D3 /* attractions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = attractions.plist; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 		6A676EF21AE82E9F004A05D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A676EF11AE82E9F004A05D3 /* Lab6_Los Angeles Attractions.app */,
-				6A676F0A1AE82E9F004A05D3 /* Lab6_Los Angeles AttractionsTests.xctest */,
+				6A676EF11AE82E9F004A05D3 /* Attractions of Los Angeles.app */,
+				6A676F0A1AE82E9F004A05D3 /* Attractions of Los AngelesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,9 +188,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A676EF01AE82E9F004A05D3 /* Lab6_Los Angeles Attractions */ = {
+		6A676EF01AE82E9F004A05D3 /* Attractions of Los Angeles */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A676F141AE82E9F004A05D3 /* Build configuration list for PBXNativeTarget "Lab6_Los Angeles Attractions" */;
+			buildConfigurationList = 6A676F141AE82E9F004A05D3 /* Build configuration list for PBXNativeTarget "Attractions of Los Angeles" */;
 			buildPhases = (
 				6A676EED1AE82E9F004A05D3 /* Sources */,
 				6A676EEE1AE82E9F004A05D3 /* Frameworks */,
@@ -200,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = "Lab6_Los Angeles Attractions";
+			name = "Attractions of Los Angeles";
 			productName = "Lab6_Los Angeles Attractions";
-			productReference = 6A676EF11AE82E9F004A05D3 /* Lab6_Los Angeles Attractions.app */;
+			productReference = 6A676EF11AE82E9F004A05D3 /* Attractions of Los Angeles.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6A676F091AE82E9F004A05D3 /* Lab6_Los Angeles AttractionsTests */ = {
+		6A676F091AE82E9F004A05D3 /* Attractions of Los AngelesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A676F171AE82E9F004A05D3 /* Build configuration list for PBXNativeTarget "Lab6_Los Angeles AttractionsTests" */;
+			buildConfigurationList = 6A676F171AE82E9F004A05D3 /* Build configuration list for PBXNativeTarget "Attractions of Los AngelesTests" */;
 			buildPhases = (
 				6A676F061AE82E9F004A05D3 /* Sources */,
 				6A676F071AE82E9F004A05D3 /* Frameworks */,
@@ -218,9 +218,9 @@
 			dependencies = (
 				6A676F0C1AE82E9F004A05D3 /* PBXTargetDependency */,
 			);
-			name = "Lab6_Los Angeles AttractionsTests";
+			name = "Attractions of Los AngelesTests";
 			productName = "Lab6_Los Angeles AttractionsTests";
-			productReference = 6A676F0A1AE82E9F004A05D3 /* Lab6_Los Angeles AttractionsTests.xctest */;
+			productReference = 6A676F0A1AE82E9F004A05D3 /* Attractions of Los AngelesTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -241,7 +241,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A676EEC1AE82E9F004A05D3 /* Build configuration list for PBXProject "Lab6_Los Angeles Attractions" */;
+			buildConfigurationList = 6A676EEC1AE82E9F004A05D3 /* Build configuration list for PBXProject "Attractions of Los Angeles" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -254,8 +254,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A676EF01AE82E9F004A05D3 /* Lab6_Los Angeles Attractions */,
-				6A676F091AE82E9F004A05D3 /* Lab6_Los Angeles AttractionsTests */,
+				6A676EF01AE82E9F004A05D3 /* Attractions of Los Angeles */,
+				6A676F091AE82E9F004A05D3 /* Attractions of Los AngelesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -324,7 +324,7 @@
 /* Begin PBXTargetDependency section */
 		6A676F0C1AE82E9F004A05D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6A676EF01AE82E9F004A05D3 /* Lab6_Los Angeles Attractions */;
+			target = 6A676EF01AE82E9F004A05D3 /* Attractions of Los Angeles */;
 			targetProxy = 6A676F0B1AE82E9F004A05D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -433,7 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lab6_Los Angeles Attractions/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Attractions of Los Angeles";
 			};
 			name = Debug;
 		};
@@ -443,7 +443,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Lab6_Los Angeles Attractions/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Attractions of Los Angeles";
 			};
 			name = Release;
 		};
@@ -461,7 +461,7 @@
 				);
 				INFOPLIST_FILE = "Lab6_Los Angeles AttractionsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Attractions of Los AngelesTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lab6_Los Angeles Attractions.app/Lab6_Los Angeles Attractions";
 			};
 			name = Debug;
@@ -476,7 +476,7 @@
 				);
 				INFOPLIST_FILE = "Lab6_Los Angeles AttractionsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Attractions of Los AngelesTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lab6_Los Angeles Attractions.app/Lab6_Los Angeles Attractions";
 			};
 			name = Release;
@@ -484,7 +484,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A676EEC1AE82E9F004A05D3 /* Build configuration list for PBXProject "Lab6_Los Angeles Attractions" */ = {
+		6A676EEC1AE82E9F004A05D3 /* Build configuration list for PBXProject "Attractions of Los Angeles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A676F121AE82E9F004A05D3 /* Debug */,
@@ -493,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A676F141AE82E9F004A05D3 /* Build configuration list for PBXNativeTarget "Lab6_Los Angeles Attractions" */ = {
+		6A676F141AE82E9F004A05D3 /* Build configuration list for PBXNativeTarget "Attractions of Los Angeles" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A676F151AE82E9F004A05D3 /* Debug */,
@@ -502,7 +502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A676F171AE82E9F004A05D3 /* Build configuration list for PBXNativeTarget "Lab6_Los Angeles AttractionsTests" */ = {
+		6A676F171AE82E9F004A05D3 /* Build configuration list for PBXNativeTarget "Attractions of Los AngelesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A676F181AE82E9F004A05D3 /* Debug */,

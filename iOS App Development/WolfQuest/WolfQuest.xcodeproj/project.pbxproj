@@ -38,14 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6A64063C1AFAC8A400767B63 /* ITP342 Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ITP342 Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A64063C1AFAC8A400767B63 /* WolfQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6406401AFAC8A400767B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A6406411AFAC8A400767B63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A6406431AFAC8A400767B63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A6406441AFAC8A400767B63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6A64064C1AFAC8A400767B63 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6A64064F1AFAC8A400767B63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		6A6406551AFAC8A400767B63 /* ITP342 Final ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ITP342 Final ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6406551AFAC8A400767B63 /* WolfQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolfQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A64065A1AFAC8A400767B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A64065B1AFAC8A400767B63 /* ITP342_Final_ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITP342_Final_ProjectTests.m; sourceTree = "<group>"; };
 		6A6406651AFCCEBD00767B63 /* WolfSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WolfSelectionViewController.h; sourceTree = "<group>"; };
@@ -104,8 +104,8 @@
 		6A64063D1AFAC8A400767B63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A64063C1AFAC8A400767B63 /* ITP342 Final Project.app */,
-				6A6406551AFAC8A400767B63 /* ITP342 Final ProjectTests.xctest */,
+				6A64063C1AFAC8A400767B63 /* WolfQuest.app */,
+				6A6406551AFAC8A400767B63 /* WolfQuestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A64063B1AFAC8A400767B63 /* ITP342 Final Project */ = {
+		6A64063B1AFAC8A400767B63 /* WolfQuest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A64065F1AFAC8A400767B63 /* Build configuration list for PBXNativeTarget "ITP342 Final Project" */;
+			buildConfigurationList = 6A64065F1AFAC8A400767B63 /* Build configuration list for PBXNativeTarget "WolfQuest" */;
 			buildPhases = (
 				6A6406381AFAC8A400767B63 /* Sources */,
 				6A6406391AFAC8A400767B63 /* Frameworks */,
@@ -189,14 +189,14 @@
 			);
 			dependencies = (
 			);
-			name = "ITP342 Final Project";
+			name = WolfQuest;
 			productName = "ITP342 Final Project";
-			productReference = 6A64063C1AFAC8A400767B63 /* ITP342 Final Project.app */;
+			productReference = 6A64063C1AFAC8A400767B63 /* WolfQuest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6A6406541AFAC8A400767B63 /* ITP342 Final ProjectTests */ = {
+		6A6406541AFAC8A400767B63 /* WolfQuestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A6406621AFAC8A400767B63 /* Build configuration list for PBXNativeTarget "ITP342 Final ProjectTests" */;
+			buildConfigurationList = 6A6406621AFAC8A400767B63 /* Build configuration list for PBXNativeTarget "WolfQuestTests" */;
 			buildPhases = (
 				6A6406511AFAC8A400767B63 /* Sources */,
 				6A6406521AFAC8A400767B63 /* Frameworks */,
@@ -207,9 +207,9 @@
 			dependencies = (
 				6A6406571AFAC8A400767B63 /* PBXTargetDependency */,
 			);
-			name = "ITP342 Final ProjectTests";
+			name = WolfQuestTests;
 			productName = "ITP342 Final ProjectTests";
-			productReference = 6A6406551AFAC8A400767B63 /* ITP342 Final ProjectTests.xctest */;
+			productReference = 6A6406551AFAC8A400767B63 /* WolfQuestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -230,7 +230,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6A6406371AFAC8A400767B63 /* Build configuration list for PBXProject "ITP342 Final Project" */;
+			buildConfigurationList = 6A6406371AFAC8A400767B63 /* Build configuration list for PBXProject "WolfQuest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -243,8 +243,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A64063B1AFAC8A400767B63 /* ITP342 Final Project */,
-				6A6406541AFAC8A400767B63 /* ITP342 Final ProjectTests */,
+				6A64063B1AFAC8A400767B63 /* WolfQuest */,
+				6A6406541AFAC8A400767B63 /* WolfQuestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,7 +302,7 @@
 /* Begin PBXTargetDependency section */
 		6A6406571AFAC8A400767B63 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6A64063B1AFAC8A400767B63 /* ITP342 Final Project */;
+			target = 6A64063B1AFAC8A400767B63 /* WolfQuest */;
 			targetProxy = 6A6406561AFAC8A400767B63 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -415,7 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ITP342 Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WolfQuest;
 			};
 			name = Debug;
 		};
@@ -425,7 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ITP342 Final Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WolfQuest;
 			};
 			name = Release;
 		};
@@ -443,8 +443,8 @@
 				);
 				INFOPLIST_FILE = "ITP342 Final ProjectTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ITP342 Final Project.app/ITP342 Final Project";
+				PRODUCT_NAME = WolfQuestTests;
+				TEST_HOST = "";
 			};
 			name = Debug;
 		};
@@ -458,15 +458,15 @@
 				);
 				INFOPLIST_FILE = "ITP342 Final ProjectTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ITP342 Final Project.app/ITP342 Final Project";
+				PRODUCT_NAME = WolfQuestTests;
+				TEST_HOST = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A6406371AFAC8A400767B63 /* Build configuration list for PBXProject "ITP342 Final Project" */ = {
+		6A6406371AFAC8A400767B63 /* Build configuration list for PBXProject "WolfQuest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A64065D1AFAC8A400767B63 /* Debug */,
@@ -475,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A64065F1AFAC8A400767B63 /* Build configuration list for PBXNativeTarget "ITP342 Final Project" */ = {
+		6A64065F1AFAC8A400767B63 /* Build configuration list for PBXNativeTarget "WolfQuest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A6406601AFAC8A400767B63 /* Debug */,
@@ -484,7 +484,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A6406621AFAC8A400767B63 /* Build configuration list for PBXNativeTarget "ITP342 Final ProjectTests" */ = {
+		6A6406621AFAC8A400767B63 /* Build configuration list for PBXNativeTarget "WolfQuestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A6406631AFAC8A400767B63 /* Debug */,
