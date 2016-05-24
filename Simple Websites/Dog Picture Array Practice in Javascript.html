@@ -1,0 +1,140 @@
+
+<html>
+<head>
+<title>Assignment 5</title>
+
+<style>
+    
+</style>
+    
+    
+<script language="javascript">
+    
+
+    
+var wpath = "http://webdev.usc.edu/itp301/dogs/"
+			var originalImg = new Array ; var imgdescr = new Array;
+            var sImage = new Array ; 
+            var mImage = new Array ; 
+            var lImage = new Array ; 
+
+//			imgname[0] = 'dogs01_s.jpg' ; imgdescr[0] = "white gray black dogs boxer";
+//			imgname[1] = 'dogs02_s.jpg' ; imgdescr[1] = "white black dog boxer fighting";
+//			imgname[2] = 'dogs03_s.jpg' ; imgdescr[2] = "white dog chasing running black boxer dog";
+//			imgname[3] = 'dogs09_s.jpg' ; imgdescr[3] = "white boxer dog licking white dog mouth";
+//			imgname[4] = 'dogs11_s.jpg' ; imgdescr[4] = "white dog catching black boxer dog";
+//			imgname[5] = 'dogs12_s.jpg' ; imgdescr[5] = "white boxer dog with blue ball";
+//			imgname[6] = 'dogs18_s.jpg' ; imgdescr[6] = "white ad black boxer dogs looking out";
+//			imgname[7] = 'dogs14_s.jpg' ; imgdescr[7] = "white and black boxer dogs on bed";
+//			imgname[8] = 'dogs15_s.jpg' ; imgdescr[8] = "white boxer dog open mouth";
+//			imgname[9] = 'dogs16_s.jpg' ; imgdescr[9] = "tan italian greyhouse sniffing black boxer dog ear";
+//			imgname[10] = 'dogs17_s.jpg' ; imgdescr[10] = "close up of white boxer dog";
+//            imgname[11] = 'portrait_m.jpg' ;
+//            imgname[12] = 'portrait_l.jpg' ;
+//            imgname[13] = 'dogs17_s.jpg' ;
+//            imgname[14] = 'dogs18_s.jpg' ;
+//            imgname[15] = 'dogs19_s.jpg' ;
+//            imgname[16] = 'dogs20_s.jpg' ;
+//            imgname[17] = 'dogs21_s.jpg' ;
+//            imgname[18] = 'dogs22_s.jpg' ;
+//            imgname[19] = 'dogs23_s.jpg' ;
+//            imgname[20] = 'dogs24_s.jpg' ;
+//            imgname[21] = 'dogs25_s.jpg' ;
+</script>
+
+</head>
+
+<body onload="saveImages()">
+    
+
+
+<form>
+<!--    open top image-->
+    <a href="http://webdev.usc.edu/itp301/dogs/portrait_l.jpg" target="_new"> 
+    <img src= "http://webdev.usc.edu/itp301/dogs/portrait_m.jpg">
+    </a>
+    
+    
+    
+    <br /><br />
+<!--    <img src= wpath+imgname[0]>-->
+
+<!--    <img src="xiaohan.jpg" href="http://xiaohanc.student.uscitp.com/itp301/Labs/jq_functions_lab.html">-->
+<!--
+<input type="text" id="searchbox" value="dog" />
+<input type="button" value="Search for images" onClick="showimages(document.getElementById('searchbox').value)" />
+-->
+</form>
+
+<br /><br />
+
+
+<hr/ >
+<div id="3Images">
+
+</div>
+    
+<br /><br />
+    
+<div id="smallImages">
+
+</div>
+    
+    
+<script>
+
+    var saveImages = function(){
+        for (i=1; i<=25; i=i+1){
+            var temp = i.toString();
+            if( temp.length == 1) temp = "0"+temp;
+//            var string = 'dogs'+temp+'_s.jpg';
+  
+            originalImg[i-1] = 'dogs'+temp+'.jpg';
+            sImage[i-1] = 'dogs'+temp+'_s.jpg';
+            mImage[i-1] = 'dogs'+temp+'_m.jpg';
+            lImage[i-1] = 'dogs'+temp+'_l.jpg';
+                 
+		}
+        // open 3 images below
+        var newhtml = "";
+        for(i=0;i<3;i=i+1){
+            var num = Math.round(Math.random() * 25);
+            newhtml = newhtml + " <a target='_new' href='" + wpath + originalImg[num] + "  '/> <img src='" + wpath + mImage[num] + "'/> ";
+            
+            if(num == 12 || num ==13){
+                alert("Stay away from my ball!!");
+            }
+            
+        }
+        
+//        newhtml = newhtml + "<img src='" + wpath + sImage[21] + "'/> ";
+        document.getElementById('3Images').innerHTML = newhtml;
+        
+        var newhtml = "";
+        for (i=0; i<sImage.length; i=i+1){
+             newhtml = newhtml + " <a target='_new' href='" + wpath + lImage[i] + "  '/> <img src='" + wpath + sImage[i] + "'/> </a>";
+        }
+         document.getElementById('smallImages').innerHTML = newhtml;
+        
+        
+    }
+ 
+//var showimages = function(searchphrase){
+//	
+//	newhtml = ""
+//
+//	for (i=0; i<imgname.length; i=i+1){
+//            if(imgdescr[i].indexOf(searchphrase)>-1) {
+//               newhtml = newhtml + "<img src='" + wpath + imgname[i] + "'/> ";
+//            }
+//        
+//		}
+//
+//	document.getElementById('contentbox').innerHTML = newhtml
+//
+//}
+
+</script>
+
+</body>
+</html>

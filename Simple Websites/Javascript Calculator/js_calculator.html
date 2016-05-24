@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Xiaohan Chen
+ITP 301
+Assignment 4 -->
+
+<head>
+	<title>Calculator</title>
+	<script>
+
+	var firstNum = 0;
+	var secondNum = 0;
+	var mathOperation = null;
+	var firstNumInput = true;
+
+	
+
+	function reset() {
+
+		document.getElementById('content').value="";
+		firstNum=0;
+		secondNum=0;
+		mathOperation=null;
+		firstNumInput=true;
+	}
+
+	function saveFunction(newMathOp) {
+		// alert("Im here");
+		if(mathOperation == null && (firstNum=="add" ||firstNum=="sub" ||firstNum=="divide" ||firstNum=="mult" ||firstNum=="equal") ){
+			alert("Wrong input, please input in the order of number, operator, number, and equal. All previous input will be reset now.");
+			reset();
+
+		}
+		else if(mathOperation==null && firstNumInput){
+
+			firstNum = document.getElementById('content').value;
+			firstNum = parseInt(firstNum);
+			mathOperation = newMathOp;
+			document.getElementById('content').value = "";
+			firstNumInput = false ;
+		}
+
+		else if (mathOperation!=null) {
+			secondNum = document.getElementById('content').value;
+			secondNum = parseInt(secondNum);
+			performCalculation();
+			// document.getElementById('content').value = "";
+		}
+
+
+
+		else{
+			alert("Wrong input, please input in the order of number, operator, number, and equal. All previous input will be reset now. Im here");
+			reset();
+
+		}
+		
+
+	}
+
+
+	function performCalculation() {
+		// alert("performing calculation");
+		var result =0;
+		if(mathOperation=="mult") result = firstNum*secondNum;
+		else if (mathOperation=="divide") result = firstNum / secondNum;
+		else if (mathOperation=="sub") result = firstNum  - secondNum;
+		else if (mathOperation=="add") result = firstNum+secondNum;
+
+		// alert("result: " + result);
+		result = parseFloat(result);
+		document.getElementById('content').value = result;
+		
+		// document.getElementById('content').value = result;	
+	}
+
+
+	</script>
+	<style>
+	div { margin:4px;	float:left; }
+	#calculator { background-color: #496889; width:300px; background-image: url("Small Squares On Blue Background.jpg");border: 1px solid black; border:5px outset #9a9;}		
+	#readout { width:100%; text-align:center; }
+	#content { width:280px;	border: 2px solid cyan;}
+	.bc { clear:both;	}
+	img { width:50px; height:50px; border: 1px solid black; border:3px outset #9a9;}
+	</style>
+</head>
+
+<body style="background-color: #FFFFFF; color: #000;">
+
+	<form name="calculator">
+		<div id="calculator">
+			<div id="readout">
+				<input type="text" name="content" id="content" />
+			</div>
+			<br class="bc" />
+			<div style="width:45%; text-align:center">
+				<a href="#" onClick="reset()"><img src="clear.gif" /></a>
+			</div>
+			<div style="width:45%; text-align:center">
+				<a href="#" value="=" onClick="saveFunction('equal')"><img src="equal.gif" /></a></td>
+			</div>
+			<br class="bc" />
+			<div style="width:22%; text-align:center">
+				<a href="#" value="7" onClick="document.getElementById('content').value=document.getElementById('content').value+'7'"  >
+					<img src="7.gif" />
+				</a>
+			</div>
+			<div style="width:22%; text-align:center">
+				<a href="#" value="8" onClick="document.getElementById('content').value=document.getElementById('content').value+'8'">
+					<img src="8.gif" />
+				</a>
+			</div>
+			<div style="width:22%; text-align:center">
+				<a href="#" value="9" onClick="document.getElementById('content').value=document.getElementById('content').value+'9'">
+					<img src="9.gif" />
+				</a>
+			</div>
+			<div style="width:22%; text-align:center"> <!-- addition -->
+				<a href="#"  onClick="saveFunction('add')">
+					<img src="add.gif" name="p" />
+				</a>
+			</div>
+			<br class="bc" />
+			<div style="width:22%; text-align:center">
+				<a href="#" value="4" onClick="document.getElementById('content').value=document.getElementById('content').value+'4'">
+					<img src="4.gif" />
+				</a>
+			</div>
+			<div style="width:22%; text-align:center">
+				<a href="#" value="5" onClick="document.getElementById('content').value=document.getElementById('content').value+'5'">
+					<img src="5.gif" />
+				</a>
+			</div>
+			<div style="width:22%; text-align:center">
+				<a href="#" value="6" onClick="document.getElementById('content').value=document.getElementById('content').value+'6'">
+					<img src="6.gif"/>
+				</a>
+			</div>
+			<div style="width:22%; text-align:center"> <!-- subtraction -->
+				<a href="#" value="-" onClick="saveFunction('sub')">
+					<img src="subtract.gif" name="s" />
+				</a>
+			</div>
+			<br class="bc" />
+			<div style="width:22%; text-align:center">
+				<a href="#" value="1" onClick="document.getElementById('content').value=document.getElementById('content').value+'1'">
+					<img src="1.gif" />
+				</a>
+			</div>
+			<div style="width:22%; text-align:center">
+				<a href="#" value="2" onClick="document.getElementById('content').value=document.getElementById('content').value+'2'">
+					<img src="2.gif" />
+				</a>
+			</div>
+			<div style="width:22%; text-align:center"> 
+				<a href="#" value="3" onClick="document.getElementById('content').value=document.getElementById('content').value+'3'">
+					<img src="3.gif"/>
+				</a>
+			</div>
+			<div style="width:22%; text-align:center"> <!-- multiplication -->
+				<a href="#" value="x" onClick="saveFunction('mult')">
+				<img src="m.gif" name="multiply" /></a>
+			</div>
+			<br class="bc" />
+			<div style="width:22%; text-align:center">
+			</div>
+			<div style="width:22%; text-align:center">
+				<a href="#" value="0" onClick="document.getElementById('content').value=document.getElementById('content').value+'0'"><img src="0.gif" /></a>
+			</div>
+			<div style="width:22%; text-align:center">
+			</div>
+			<div style="width:22%; text-align:center"> <!-- division -->
+				<a href="#" value="/" onClick="saveFunction('divide')"><img src="divide.gif" name="d" /></a>
+			</div>
+			<br class="bc" />
+		</div>
+	</form>
+
+ <script >
+	document.getElementById("content").disabled = true;
+ </script>
+
+
+</body>
+
+</html>

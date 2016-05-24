@@ -1,0 +1,291 @@
+
+
+<html>
+<head>
+<title>Breeder Search Page</title>
+
+<style>
+ 
+    body{
+	background-color: #6666FF;
+    background-image: url("crouch.jpg");
+    background-size: 100% 100%;
+
+
+}
+
+    
+#upperContainer{
+
+        
+	width: 600px;
+	padding: 5%;
+	/*color:white;*/
+	background-color: black;
+    color: white;
+     border: 2px solid #a1a1a1;
+	    border-radius: 25px;
+    opacity: 0.7;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+ 
+/*         position:absolute;*/
+  top: 50%;
+  left: 50%;
+    text-align: center;
+        
+}
+    
+#apdiv{
+    width: 600px;
+    left: 0;
+    visibility: hidden;
+    
+
+/*	width: 500px;*/
+	padding: 5%;
+    opacity: 0.7;
+	background-color: black;
+    color:white;
+    border: 2px solid #a1a1a1;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    display: table;
+    
+    text-align: center;
+        
+}
+    
+a:link {
+    color: white;
+}
+
+
+a:visited {
+    color: skyblue;
+}
+a:hover {
+    color: red;
+}
+</style>
+    
+<script src="http://webdev.usc.edu/jquery.js"></script>    
+<script>
+    
+
+    var breeder1 = {
+    source: 'The Wolf Crossing',
+    website: 'http://www.thewolfcrossing.org/',
+    tags: ['west'],
+    
+};
+var breeder2 = {
+    source: 'Winddancer Wolfdogs',
+    website: 'http://www.freewebs.com/winddancerwolves/',
+    tags: ['east'],
+    
+};
+var breeder3 = {
+    source: 'Wolves USA',
+    website: 'http://www.wolves-usa.com/',
+    tags: ['north'],
+    
+};
+var breeder4 = {
+    source: 'Singing Moon Wolfdogs',
+    website: 'http://www.singingmoonwolfdogs.com/',
+    tags: ['south'],
+    
+};
+var breeder5 = {
+    source: 'Howling Acres Wolfdogs',
+     website: 'http://howlingacrewolfdogs.webs.com/',
+    tags: ['mideast'],
+    
+};
+var breeder6 = {
+    source: 'Gray Wolf Acres',
+    website: 'http://graywolfacres.webs.com/',
+    tags: ['midwest'],
+    
+};
+//var breeder7 = {
+//    source: '7.jpg',
+//    caption:'black wolf staring',
+//    tags: ['wood','black','snow', 'short hair','staring'],
+//    
+//};
+//var breeder8 = {
+//    source: '8.jpg',
+//    caption:'wolf pack family picture',
+//    tags: ['wood','white','snow', 'many','staring'],
+//    
+//};
+//var breeder9 = {
+//    source: '9.jpg',
+//    caption:'two cubs lying in the sun',
+//    tags: ['grasses','many','sun', 'cub','resting'],
+//    
+//};
+//var breeder10 = {
+//    source: '10.jpg',
+//    caption:'white wolf showing head',
+//    tags: ['terrain','white','rock', 'short hair','staring'],
+//    
+//};
+
+
+
+var breederArray= new Array ;
+breederArray[0]=breeder1;
+breederArray[1]=breeder2;
+breederArray[2]=breeder3;
+breederArray[3]=breeder4;
+breederArray[4]=breeder5;
+breederArray[5]=breeder6;
+//breederArray[6]=breeder7;
+//breederArray[7]=breeder8;
+//breederArray[8]=breeder9;
+//breederArray[9]=breeder10;
+
+
+        
+    jQuery.fn.center = function () {
+    this.css("position","absolute");
+//    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+//                                                $(window).scrollTop()) + "px");
+        this.css("top", "45%");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+//        document.getElementById('apdiv').style.left="25%";
+    return this;
+    }
+    
+    
+    var centerElement = function(){
+        $("#apdiv").center();
+    }
+    
+    var visibilityToggle = function() {
+     $( "#apdiv" ).css('visibility', 'visible');
+    }
+    
+
+    
+    
+</script>
+
+</head>
+
+<body >
+    
+
+
+<form>
+    
+    
+    
+    <div id = "upperContainer">
+    <h1> Wolfdog Breeder Search </h1>
+    <p> Search for a wolfdog breeders in a region of America. </p>
+    <p> Please enter a region (midwest, east, west, etc). </p>
+    <p>Enter Keyword: <input id="search" type="text"/></p>
+    <p> <input id="sButton" value="Search" onclick="searchButtonPressed(document.getElementById('search').value)" type="button"/></p>
+    </div>
+<!--    open top breeder-->
+<!--
+    <a href="http://webdev.usc.edu/itp301/dogs/portrait_l.jpg" target="_new"> 
+    <img src= "http://webdev.usc.edu/itp301/dogs/portrait_m.jpg">
+    </a>
+-->
+    
+   
+    
+ <br /><br />
+<!--    <img src= wpath+imgname[0]>-->
+
+<!--    <img src="xiaohan.jpg" href="http://xiaohanc.student.uscitp.com/itp301/Labs/jq_functions_lab.html">-->
+<!--
+<input type="text" id="searchbox" value="dog" />
+<input type="button" value="Search for breeders" onClick="showbreeders(document.getElementById('searchbox').value)" />
+-->
+</form>
+
+<br /><br />
+
+
+<div id="apdiv">
+    
+</div>
+    
+<br /><br />
+    
+
+    
+<script>
+    
+    setInterval(function () {centerElement()}, 2000); // timer event
+
+    var searchButtonPressed = function(keyword){
+//          alert(keyword);
+
+        centerElement();
+        
+        visibilityToggle();
+        document.getElementById("apdiv").innerHTML = "";
+        
+//         var keyword = document.getElementById("search-term").value;
+    
+        var newhtml = "";
+
+        
+        if(keyword==""){
+            alert("Please enter a valid region");
+//            var newhtml = "";
+//            for (i=0; i<20; i=i+1){
+//            newhtml = newhtml + " <p><a  href='" + linkURL[i] + "  '/> " + linkName[i] +"</a> </p>";
+//            newhtml = newhtml + "Website Name: "+siteName[i]+"</br>" ;
+//            newhtml = newhtml + "Website Category: "+linkCategory[i]+"</br>" ;
+//            newhtml = newhtml + "Website Keywords: "+linkKeywords[i]+"</br></br></br></br>" ;
+//            document.getElementById("apdiv").innerHTML = newhtml; 
+                 
+		  }
+          
+
+        else{
+            var newhtml = "";
+            for (i=0; i<breederArray.length; i=i+1){
+
+           
+                var tags = breederArray[i].tags.toString().toLowerCase();
+
+
+                if(tags.indexOf(keyword) != -1 ){
+                    newhtml = newhtml + " <p><a  href='" +  breederArray[i].website.toString() + "  '/> " + breederArray[i].source.toString() +"</a> </p>";
+                }
+            }
+        }
+            
+            if(newhtml!=""){
+                
+              document.getElementById("apdiv").innerHTML = newhtml; 
+            }
+            else{
+                document.getElementById("apdiv").innerHTML= "no results found";
+            }
+        centerElement();
+        
+        
+//        document.getElementById("apdiv").innerHTML = "hello";
+
+    }    
+
+
+</script>
+
+</body>
+</html>

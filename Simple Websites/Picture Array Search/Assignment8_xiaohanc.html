@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">n
+  <title>My Favorite Wolve Collection</title>
+    <script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+	<script src="assignment8.js"></script>
+  <style>
+  	#search-box button{
+  		margin:	10px 0px;
+  	}
+  	#allPictures{
+  		margin-top:	20px;
+  	}
+
+
+  </style>
+
+</head>
+<body onload="showImages()">
+
+	<h1>My Favorite Wolves</h1>
+	<div id="search-box">
+		Search: <input placeholder="snow, white, wood" type="text" id="search-term">
+		<br/>
+
+		<button onclick="searchAndHighlight()" id="search-btn">Search</button>
+
+
+	</div>
+	<div id="allPictures">       
+        
+	</div>
+    
+    
+	
+</body>
+</html>

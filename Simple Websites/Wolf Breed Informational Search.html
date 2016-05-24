@@ -1,0 +1,353 @@
+
+<html>
+<head>
+<title>Assignment 6: Wolf Search</title>
+
+<style>
+ 
+    body{
+	background-color: #6666FF;
+    background-image: url("wolf-sleep-in-mount-folwer-wallpaper-desktop-wolf-wallpapers-for-desktop-wallpaper-hd-free-download-border-iphone-android-downloads-home.jpg");
+    background-size: 100% 100%;
+
+
+}
+
+    
+#upperContainer{
+
+	width: 500px;
+	padding: 5%;
+	/*color:white;*/
+	background-color: white;
+    border: 2px solid #a1a1a1;
+        border-radius: 25px;
+    opacity: 0.8;
+    font-family: Arial, Helvetica, sans-serif;
+        
+
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+        
+}
+    
+#apdiv{
+    width: 500px;
+    left: 0;
+    visibility: hidden;
+    
+
+/*	width: 500px;*/
+	padding: 5%;
+    opacity: 1;
+	color:white;
+	background-color: white;
+    border: 2px solid #a1a1a1;
+        border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+    display: table;
+    
+    text-align: center;
+    color: black;
+        
+}
+</style>
+    
+<script src="http://webdev.usc.edu/jquery.js"></script>    
+<script>
+    
+
+			var linkName = new Array ; 
+            var siteName = new Array ; 
+            var linkURL = new Array ; 
+            var linkCategory = new Array ; 
+            var linkKeywords = new Array ; 
+    
+            siteName[0] = 'Basic Facts About Gray Wolves' ; linkURL[0] = 'http://www.defenders.org/gray-wolf/basic-facts';
+            siteName[1] = 'Red Wolf' ; linkURL[1] = 'http://www.endangeredwolfcenter.org/educational-resources/red-wolf/#.';
+            siteName[2] = 'Factors limiting population growth of wolves in Algonquin Park' ; linkURL[2] = 'http://www.sbaa.ca/projects.asp?cn=314';
+            siteName[3] = 'Basic Facts About Gray Wolves' ; linkURL[3] = 'http://www.defenders.org/gray-wolf/basic-facts';
+            siteName[4] = 'Himalayan Wolf' ; linkURL[4] = 'http://www.wolfworlds.com/himalayan-wolf/';
+            siteName[5] = 'Maned Wolf' ; linkURL[5] = 'http://www.endangeredwolfcenter.org/educational-resources/maned-wolf/#.';
+            siteName[6] = 'Arctic Wolf' ; linkURL[6] = 'http://www.wolfworlds.com/arctic-wolf/';
+            siteName[7] = 'The Steppe Wolf' ; linkURL[7] = 'http://www.cosmosmith.com/steppe_wolf.asp';
+            siteName[8] = 'Italian Wolf' ; linkURL[8] = 'http://www.animalcorner.co.uk/wildlife/wolves/wolf_italian.html';
+            siteName[9] = 'Iberian wolves - Where to see them' ; linkURL[9] = 'http://www.wildlifeextra.com/go/world/Iberian-wolf.html#cr';
+            siteName[10] = 'The Tibetan Wolf' ; linkURL[10] = 'http://www.cosmosmith.com/tibetan_wolf.asp';
+            siteName[11] = 'The Arabian Wolf' ; linkURL[11] = 'http://www.cosmosmith.com/arabian_wolves.html';
+
+            siteName[12] = 'Mexican Wolf: Endangerd Wolf Center' ; linkURL[12] = 'http://www.endangeredwolfcenter.org/educational-resources/mexican-gray-wolf/#.';
+            siteName[13] = 'The Mackenzie Valley Wolf' ; linkURL[13] = 'http://www.cosmosmith.com/mackenzie_valley_wolves.asp';
+            siteName[14] = 'The Alexander Archipelago Wolf' ; linkURL[14] = 'http://www.cosmosmith.com/alexander_archipelago_wolves.asp';
+            siteName[15] = 'The Mackenzie Valley Wolf' ; linkURL[15] = 'http://www.cosmosmith.com/mackenzie_valley_wolves.asp';
+            siteName[16] = 'British Columbian Wolves' ; linkURL[16] = 'http://bransonswildworld.com/british-columbian-wolves/';
+            siteName[17] = 'Timberwolf Organics ' ; linkURL[17] = 'http://www.timberwolforganics.com/';
+            siteName[18] = 'Wolf Quest' ; linkURL[18] = 'http://www.wolfquest.org/wolf_greatplains.php';
+            siteName[19] = 'The Greenland Wolf' ; linkURL[19] = 'http://www.cosmosmith.com/greenland_wolves.asp';
+
+
+    
+            linkName[0] = 'Grey Wolf' ;
+            linkName[1] = 'Red Wolf' ;
+            linkName[2] = 'Eastern Wolf' ;
+            linkName[3] = 'Ethiopian Wolf' ;
+            linkName[4] = 'Himalayan Wolf' ;
+            linkName[5] = 'Maned Wolf' ;
+            linkName[6] = 'Arctic Wolf' ;
+            linkName[7] = 'Steppe Wolf' ;
+            linkName[8] = 'Italian Wolf' ;
+            linkName[9] = 'Iberian Wolf' ;
+            linkName[10] = 'Tibetan Wolf' ;
+            linkName[11] = 'Arabian Wolf' ;
+            linkName[12] = 'Mexican Wolf' ;
+            linkName[13] = 'Mackenzie Valley Wolf' ;
+            linkName[14] = 'Alexander Archipelago Wolf' ;
+            linkName[15] = 'Arctic Wolf' ;
+            linkName[16] = 'British Columbian Wolf' ;
+            linkName[17] = 'Timber Wolf' ;
+            linkName[18] = 'Great Plains Wolf' ;
+            linkName[19] = 'Greenland Wolf' ;
+    
+            linkKeywords[0] = 'Grey Wolf' ;
+            linkKeywords[1] = 'Red Wolf' ;
+            linkKeywords[2] = 'Eastern Wolf' ;
+            linkKeywords[3] = 'Ethiopian Wolf' ;
+            linkKeywords[4] = 'Himalayan Wolf' ;
+            linkKeywords[5] = 'Maned Wolf' ;
+            linkKeywords[6] = 'Arctic Wolf' ;
+            linkKeywords[7] = 'Steppe Wolf' ;
+            linkKeywords[8] = 'Italian Wolf' ;
+            linkKeywords[9] = 'Iberian Wolf' ;
+            linkKeywords[10] = 'Tibetan Wolf' ;
+            linkKeywords[11] = 'Arabian Wolf' ;
+            linkKeywords[12] = 'Mexivan Wolf' ;
+            linkKeywords[13] = 'Mackenzie Valley Wolf' ;
+            linkKeywords[14] = 'Alexander Archipelago Wolf' ;
+            linkKeywords[15] = 'Arctic Wolf' ;
+            linkKeywords[16] = 'British Columbian Wolf' ;
+            linkKeywords[17] = 'Timber Wolf' ;
+            linkKeywords[18] = 'Great Plains Wolf' ;
+           linkKeywords[19] = 'Greenland Wolf' ;
+    
+            linkCategory[0] = 'wolf' ;
+            linkCategory[1] = 'wolf' ;
+            linkCategory[2] = 'wolf' ;
+            linkCategory[3] = 'wolf' ;
+            linkCategory[4] = 'wolf' ;
+            linkCategory[5] = 'wolf' ;
+            linkCategory[6] = 'wolf' ;
+            linkCategory[7] = 'wolf' ;
+            linkCategory[8] = 'wolf' ;
+            linkCategory[9] = 'wolf' ;
+            linkCategory[10] = 'wolf' ;
+            linkCategory[11] = 'wolf' ;
+            linkCategory[12] = 'wolf' ;
+            linkCategory[13] = 'wolf' ;
+            linkCategory[14] = 'wolf' ;
+            linkCategory[15] = 'wolf' ;
+            linkCategory[16] = 'wolf' ;
+            linkCategory[17] = 'wolf' ;
+            linkCategory[18] = 'wolf' ;
+            linkCategory[19] = 'wolf' ;
+
+        
+    jQuery.fn.center = function () {
+    this.css("position","absolute");
+//    this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + 
+//                                                $(window).scrollTop()) + "px");
+        this.css("top", "40%");
+    this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + 
+                                                $(window).scrollLeft()) + "px");
+//        document.getElementById('apdiv').style.left="25%";
+    return this;
+    }
+    
+    
+    var centerElement = function(){
+        $("#apdiv").center();
+    }
+    
+    var visibilityToggle = function() {
+     $( "#apdiv" ).css('visibility', 'visible');
+    }
+    
+
+    
+    
+</script>
+
+</head>
+
+<body >
+    
+
+
+<form>
+    
+    
+    
+    <div id = "upperContainer">
+    <h1> Wolf Search </h1>
+    <p> This is a search for wolf breeds. </p>
+    <p> All websites will give a basic introduction of the selected breed. </p>
+    <p>Enter Keyword: <input id="search" type="text"/></p>
+    <p> <input id="sButton" value="Search"  onclick="searchButtonPressed(document.getElementById('search').value)" type="button"/></p>
+    </div>
+<!--    open top image-->
+<!--
+    <a href="http://webdev.usc.edu/itp301/dogs/portrait_l.jpg" target="_new"> 
+    <img src= "http://webdev.usc.edu/itp301/dogs/portrait_m.jpg">
+    </a>
+-->
+    
+   
+    
+ <br /><br />
+<!--    <img src= wpath+imgname[0]>-->
+
+<!--    <img src="xiaohan.jpg" href="http://xiaohanc.student.uscitp.com/itp301/Labs/jq_functions_lab.html">-->
+<!--
+<input type="text" id="searchbox" value="dog" />
+<input type="button" value="Search for images" onClick="showimages(document.getElementById('searchbox').value)" />
+-->
+</form>
+
+<br /><br />
+
+
+<div id="apdiv">
+    
+hello
+</div>
+    
+<br /><br />
+    
+
+    
+<script>
+
+    var searchButtonPressed = function(keyword){
+        
+
+        
+//        document.getElementById('apdiv').style.position = "absolute";
+//        document.getElementById('apdiv').style.left="25%";
+//         document.getElementById('apdiv').style.top="40%";
+        centerElement();
+        
+        visibilityToggle();
+        document.getElementById("apdiv").innerHTML = "";
+        
+        if(keyword==""){
+            var newhtml = "";
+            for (i=0; i<20; i=i+1){
+            newhtml = newhtml + " <p><a  href='" + linkURL[i] + "  '/> " + linkName[i] +"</a> </p>";
+            newhtml = newhtml + "Website Name: "+siteName[i]+"</br>" ;
+            newhtml = newhtml + "Website Category: "+linkCategory[i]+"</br>" ;
+            newhtml = newhtml + "Website Keywords: "+linkKeywords[i]+"</br></br></br></br>" ;
+                 
+		  }
+           document.getElementById("apdiv").innerHTML = newhtml; 
+
+            
+        }
+        else{
+            var newhtml = "";
+            for (i=0; i<20; i=i+1){
+                if(linkKeywords[i].indexOf(keyword)>-1) {
+                    newhtml = newhtml + " <p><a  href='" + linkURL[i] + "  '/> " + linkName[i] +"</a> </p>";
+            newhtml = newhtml + "Website Name: "+siteName[i]+"</br>" ;
+            newhtml = newhtml + "Website Category: "+linkCategory[i]+"</br>" ;
+            newhtml = newhtml + "Website Keywords: "+linkKeywords[i]+"</br></br></br></br>" ;
+                }
+                else if(linkCategory[i].indexOf(keyword)>-1) {
+                    newhtml = newhtml + " <p><a  href='" + linkURL[i] + "  '/> " + linkName[i] +"</a> </p>";
+            newhtml = newhtml + "Website Name: "+siteName[i]+"</br>" ;
+            newhtml = newhtml + "Website Category: "+linkCategory[i]+"</br>" ;
+            newhtml = newhtml + "Website Keywords: "+linkKeywords[i]+"</br></br></br></br>" ;
+                }
+                else if(linkName[i].indexOf(keyword)>-1) {
+                    newhtml = newhtml + " <p><a  href='" + linkURL[i] + "  '/> " + linkName[i] +"</a> </p>";
+            newhtml = newhtml + "Website Name: "+siteName[i]+"</br>" ;
+            newhtml = newhtml + "Website Category: "+linkCategory[i]+"</br>" ;
+            newhtml = newhtml + "Website Keywords: "+linkKeywords[i]+"</br></br></br></br>" ;
+                }
+                else if(linkURL[i].indexOf(keyword)>-1) {
+                    newhtml = newhtml + " <p><a  href='" + linkURL[i] + "  '/> " + linkName[i] +"</a> </p>";
+            newhtml = newhtml + "Website Name: "+siteName[i]+"</br>" ;
+            newhtml = newhtml + "Website Category: "+linkCategory[i]+"</br>" ;
+            newhtml = newhtml + "Website Keywords: "+linkKeywords[i]+"</br></br></br></br>" ;
+                }
+                else if(siteName[i].indexOf(keyword)>-1) {
+                    newhtml = newhtml + " <p><a  href='" + linkURL[i] + "  '/> " + linkName[i] +"</a> </p>";
+            newhtml = newhtml + "Website Name: "+siteName[i]+"</br>" ;
+            newhtml = newhtml + "Website Category: "+linkCategory[i]+"</br>" ;
+            newhtml = newhtml + "Website Keywords: "+linkKeywords[i]+"</br></br></br></br>" ;
+                }
+             
+            }
+            
+            
+            if(newhtml!=""){
+                
+              document.getElementById("apdiv").innerHTML = newhtml; 
+            }
+            else{
+                document.getElementById("apdiv").innerHTML= "no results found";
+            }
+        }
+        centerElement();
+        
+        
+//        document.getElementById("apdiv").innerHTML = "hello";
+
+    }    
+    
+//     var visibilityToggle = function() {
+//     $( "#apdiv" ).toggle();
+//}
+
+
+//    var saveImages = function(){
+//        for (i=1; i<=25; i=i+1){
+//            var temp = i.toString();
+//            if( temp.length == 1) temp = "0"+temp;
+////            var string = 'dogs'+temp+'_s.jpg';
+//  
+//            originalImg[i-1] = 'dogs'+temp+'.jpg';
+//            sImage[i-1] = 'dogs'+temp+'_s.jpg';
+//            mImage[i-1] = 'dogs'+temp+'_m.jpg';
+//            lImage[i-1] = 'dogs'+temp+'_l.jpg';
+//                 
+//		}
+//        // open 3 images below
+//        var newhtml = "";
+//        for(i=0;i<3;i=i+1){
+//            var num = Math.round(Math.random() * 25);
+//            newhtml = newhtml + " <a target='_new' href='" + wpath + originalImg[num] + "  '/> <img src='" + wpath + mImage[num] + "'/> ";
+//            
+//            if(num == 12 || num ==13){s
+//                alert("Stay away from my ball!!");
+//            }
+//            
+//        }
+//        
+////        newhtml = newhtml + "<img src='" + wpath + sImage[21] + "'/> ";
+//        document.getElementById('3Images').innerHTML = newhtml;
+//        
+//        var newhtml = "";
+//        for (i=0; i<sImage.length; i=i+1){
+//             newhtml = newhtml + " <a target='_new' href='" + wpath + lImage[i] + "  '/> <img src='" + wpath + sImage[i] + "'/> </a>";
+//        }
+//         document.getElementById('smallImages').innerHTML = newhtml;
+//        
+//        
+//    }
+
+</script>
+
+</body>
+</html>

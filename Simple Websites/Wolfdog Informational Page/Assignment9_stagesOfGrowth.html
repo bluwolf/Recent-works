@@ -1,0 +1,325 @@
+
+<!-- Xiaohan Chen
+ITP301
+Assignment 3 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<script language = "javascript" type="text/javascript">
+//	function backgroundColor(c){
+//		// alert(c);
+//		document.body.style.background = c;
+//		document.getElementById('leftwrapper').style.background = c;
+//
+//	}
+
+	function selectPeriod(c){
+        var newhtml = "ddddddddddddddddddd";
+        
+        if(c=="neo"){
+            newhtml = " Have dark fur, rounded heads and are unable to regulate their own body temperature. <br><br> Blind with closed eyes, deaf with small ears, and a pugged nose with little if any sense of smell but a good sense of taste and touch <br><br> Limited to a slow crawl, mainly with front legs but have a good sense of balance <br> Are limited to sucking and licking; can whine and yelp <br><br> Will feed four or five times a day for periods of three to five minutes<br><br> Average females gain 2.6 lbs and males 3.3 lbs per week for the next 14 weeks";
+            document.getElementById('middlecontainer').innerHTML = newhtml;
+
+        }else if(c=="trans"){
+            newhtml = " Eyes open and are blue at 11-15 days but their eyesight is not fully developed and pups cannot perceive forms until weeks later <br><br> Milk incisors present at 15 days; can eat small pieces of regurgitated meat <br><br> Begin to stand and walk; vocalizations include growls, whimpering and squeaks, first high-pitched attempts at howling <br><br> Weight: 3.5 lbs";
+            document.getElementById('middlecontainer').innerHTML = newhtml;
+        }else if(c=="social"){
+            newhtml = " Begin appearing outside of the den and playing near the entrance <br><br>  Ears begin to raise around 27 days and hearing improves significantly <br><br>  Around 31 days the ears are erect but with tips still flopping <br><br>  Canines and premolar teeth present ";
+            document.getElementById('middlecontainer').innerHTML = newhtml;
+        }else if(c=="juvenile"){
+            newhtml = "At 8 to 10 weeks: <br><br> Adults abandon den and move pups to a rendezvous site <br><br> Weaning complete, pups feed on food provided by adults <br><br> Adult guard hair becomes apparent on body  <br><br> At 8 to 16 Weeks: <br><br> Eyes gradually change from blue to yellow-gold <br><br> Pups begin to follow adults on hunting trips for a short while and return to the den by themselves <br><br> Weight: 22-30 lbs ";
+            document.getElementById('middlecontainer').innerHTML = newhtml;
+        }else if(c=="rapid"){
+            newhtml = " Pups will gain approximately 1.3 lbs. per week over the next three months <br><br>  Weight: 28-70 lbs <br><br> Milk teeth replaced <br><br> Winter fur becomes apparent and pup appearance is nearly indistinguishable from adults <br><br> Pups begin to accompany adults on hunts";
+            document.getElementById('middlecontainer').innerHTML = newhtml;
+        }else if(c=="slow"){
+            newhtml = " Female pups will gain approximately .07 lbs. per week and male pups will gain approximately .4 lbs. per week  <br><br>Pups begin to travel with pack  <br><br> Begin actively hunting  <br><br> Epiphyseal cartilage closes off signaling the end of skeletal growth  <br><br> Pups status in the pack may start to take shape with pups displaying either more dominant or submissive behaviors  <br><br> Weight: 60-100 lbs";
+            document.getElementById('middlecontainer').innerHTML = newhtml;
+        }else if(c=="mature"){
+            newhtml = " Hormzonal changes signal sexual maturity <br><br> May choose to disperse from pack <br><br>Weight: 60-100+ lbs";
+            document.getElementById('middlecontainer').innerHTML = newhtml;
+        }
+		// document.body.style.color = "#CCCCCC";
+		// document.getEle
+//		document.getElementById('h4').style.color= c;
+//		document.getElementById('h1').style.color= c;
+//		document.getElementById('h2').style.color= c;
+//		document.getElementById('h3').style.color= c;
+//		document.getElementById('middlecontainer').style.color= c;
+//		document.getElementById('Period').style.color= c;
+//		document.getElementById('bColor').style.color= c;
+		// alert(document.getElementById('wrapper').style.color);
+		// alert("hi1");
+
+	}
+</script>
+
+
+<style>
+	img {
+	    float: left;
+	}
+
+	body {
+	    background-color: blue;
+	    color: red;
+        	background-color: #6666FF;
+    background-image: url("black_wolves.jpg");
+/*    background-size: 100% 100%;*/
+	    /*float: left;*/
+	}
+
+	h1 {
+		margin-left: auto;
+	    margin-right: auto;
+		width:800px;
+	    color: black;
+
+	    vertical-align: center;
+	}
+
+	h4 {
+		width:400px;
+	    color: white;
+	    text-align: left;
+	    font-size: 25px;
+	  
+	}
+/*
+	div {
+		width:200px;
+	    color: black;
+	    text-align: center;
+	    font-size: 20px;
+	   
+	}
+*/
+
+
+
+	p {
+	    font-family: "Times New Roman";
+	    font-size: 20px;
+	    /*color: white;*/
+	}
+    
+
+	#maincontainer {
+    column-count: 2;
+    float: left;
+    /*height: 500px;*/
+	width: 1400px;
+		/*height: 300px;*/
+	}
+    
+    
+    
+#leftwrapper{
+
+/*	float: left;*/
+	width: 400px;
+	padding: 5%;
+	/*color:white;*/
+	background-color: black;
+    color: white;
+    border-radius: 25px;
+    opacity: 0.7;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+ 
+    text-align: left;
+    float: left;
+  
+
+}
+    #middlecontainer{
+	width: 400px; 
+	padding: 5%;
+	background-color: black;
+    color: white;
+    border-radius: 25px;
+    opacity: 0.7;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    float: left;
+ 
+}
+
+	#Period, #bColor {
+	    color: white;
+	    text-align: left;
+	}
+
+	#Period {
+	    float: left;
+	    width: 300px;
+	    padding-left:50px
+	}
+
+    body{
+    background-color: #202020;
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 300;
+    letter-spacing:0.3px;
+    margin:0;
+}
+    
+    
+#container{
+    margin: auto;
+    width:1000px;
+    background-color: rgba(0, 0, 0, 0.4);
+/*    background-image: url("5.jpg");*/
+    background-repeat: no-repeat;
+    background-size: 1000px 420px;
+}
+
+#content{
+    padding-top:10px; 
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1.0);
+    min-width:900px;
+    margin-bottom: 0px;
+}
+
+#title{
+    font-size:100px;
+    background-color: transparent;
+    padding:105px;
+    padding-bottom:120px;
+    margin:0;           
+    color:white;
+    font-weight: 500;
+}
+
+#nav-bar{
+    background-color:rgba(0, 255, 0, 0);
+    text-align: center;
+    margin: auto;
+    margin-top:0px;
+    color:white;
+}
+
+#nav-bar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    
+    
+}
+#nav-bar ul li{
+    display: inline;
+    
+}
+
+#nav-bar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    width:155px;
+    margin-right: 5px;
+    padding:13px 0px;
+    font-size: 15px;
+    color: white;
+    
+}
+
+.button{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition-duration: 0.25s;
+    -webkit-border-top-left-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -ms-border-top-left-radius: 10px;
+    -o-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
+    -ms-border-top-right-radius: 10px;
+    -o-border-top-right-radius: 10px;
+}
+    
+    .highlight{
+    background-color: rgba(0, 5, 150, 1.0);
+    color: orange;
+    transition-duration: 0.25s;
+}
+
+
+#nav-bar a:hover{
+    color:white;
+    background-color: rgba(0, 0, 150, 1);
+    text-shadow: 0 0 0.2em white;
+}
+   
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+    
+ <div id="container">        
+        <div id="header">
+            <div id="title">
+                <span>Wolf<span style="font-size:90px">and</span><span style="font-size:40px">Dog</span></span>
+            </div>
+            <div id="nav-bar">
+                <ul>
+                    <li><a class="button" href="Assignment9_xiaohanc.html">Home</a></li>
+                    <li><a class="button" href="Assignment9_legalAspects.html" >Legal Aspects of Owning a Wolfdog</a></li>
+                    <li><a class="button" href="Assignment9_wolfGallery.html" >Picture Gallery</a></li>
+                    <li><a class="highlight button" href="Assignment9_stagesOfGrowth.html" >Stages of Growth</a></li>
+                    <li><a class="button" href="Assignment9_wolfDogTraining.html" >How to Train a Wolfdog</a></li>
+                    <li><a class="button" href="Assignment9_breeder.html" >Breeders</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+	<div id="leftwrapper"> 
+
+		<div id="Period">
+
+				<h4 id="h4">Stages of Growth</h4>
+			    <input type="radio" name="Period" id="1" onClick ="selectPeriod(this.value)" value="neo" checked>Neonatal Period <br>
+			    <input type="radio" name="Period" id="2" onClick ="selectPeriod(this.value)" value="trans">Transitional Period</br>
+			    <input type="radio" name="Period" id="3" onClick ="selectPeriod(this.value)" value="social">Socialization Period <br>
+			    <input type="radio" name="Period" id="4" onClick ="selectPeriod(this.value)" value="juvenile">Juvenile Period</br>
+			    <input type="radio" name="Period" id="5" onClick ="selectPeriod(this.value)" value="rapid">Period of Rapid Growth</br>
+			    <input type="radio" name="Period" id="6" onClick ="selectPeriod(this.value)" value="slow">Period of Slow Growth</br>
+			    <input type="radio" name="Period" id="7" onClick ="selectPeriod(this.value)" value="mature">Sexual Maturity</br>
+			 
+		</div>
+
+	</div>
+
+
+	<div id="middlecontainer"> 
+
+    Have dark fur, rounded heads and are unable to regulate their own body temperature. <br><br> Blind with closed eyes, deaf with small ears, and a pugged nose with little if any sense of smell but a good sense of taste and touch <br><br> Limited to a slow crawl, mainly with front legs but have a good sense of balance <br> Are limited to sucking and licking; can whine and yelp <br><br> Will feed four or five times a day for periods of three to five minutes<br><br> Average females gain 2.6 lbs and males 3.3 lbs per week for the next 14 weeks
+
+
+
+	</div>
+
+
+</div>
+
+</body>
+</html>
