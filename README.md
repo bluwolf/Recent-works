@@ -54,22 +54,4 @@ Recent Work
 
 
 
-+ Projects:
-	+ Search Engine (C++)
-	+ Worker Factory 
-		+ a full-fledged animated worker factory system
-		+ each worker completes a task in an animated panel and each task is assigned through text file
-		+ utilizes threading to avoid deadlocks 
-	+ Road Way Simulator
-		+ creating a roadway with inputed coordinate system 
-		+ each color represents a car that behaves accordingly to a preset algorithm
-	+ Restaurant System
-		+ creating a restaurant system using threads, threadpool, semiphores (multithreading)
-	+ iCalendar in Swing
-		+ creating a iCalender for 2014
-	+ MiniSearch
-	+ Bank Accounts (utilizing database)
-		+ Creating a bank account system using file read and file write
-
-
 
