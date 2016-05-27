@@ -1,3 +1,0 @@
-eb page is stored in its own file. Your program should then read in all the web pages whose file name was listed in the main one.
-
-Subsequently, it should enter an interactive mode in which the user can use cin, cout to run queries. In implementing your user interface, be careful to follow our instructions precisely. We will test this automatically, and if you take too many liberties in designing the interface, it may fail 
